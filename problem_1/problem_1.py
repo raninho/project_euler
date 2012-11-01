@@ -17,11 +17,7 @@ def sum_multiples(limit):
     for number in xrange(1, limit):
         multiple_3 = (number % 3)
         multiple_5 = (number % 5)
-        if multiple_3 == 0 and multiple_5 == 0:
-            sum += number
-        elif multiple_3 == 0:
-            sum += number
-        elif multiple_5 == 0:
+        if multiple_3 == 0 or multiple_5 == 0:
             sum += number
     return sum
 
