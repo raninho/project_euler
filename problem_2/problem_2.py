@@ -10,7 +10,7 @@ class TestSumFibonacci(unittest.TestCase):
         self.result = sum_fibonacci(89)
 
     def test_sum(self):
-        self.assertEqual(self.result, 231)
+        self.assertEqual(self.result, 44)
 
 def sum_fibonacci(max):
     fator1 = 0
